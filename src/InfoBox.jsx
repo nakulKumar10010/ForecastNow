@@ -51,7 +51,7 @@ export default function InfoBox({ info }){
                     <Button 
                         size="small" 
                         color="primary" 
-                        href="www.linkedin.com/in/nakul2004" 
+                        href="https://www.linkedin.com/in/nakul2004" 
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
