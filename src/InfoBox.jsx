@@ -23,19 +23,19 @@ export default function InfoBox({ info }){
             <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
                     sx={{ height: 140 }}
-                    image={info.humidity > 70 ? RAIN_URL : info.temp > 30 ? HOT_URL : COLD_URL }
+                    image={info?.humidity > 70 ? RAIN_URL : info?.temp > 30 ? HOT_URL : info?.temp !== undefined ? COLD_URL : INIT_URL}
                     title="Weather Image"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {info.city}         {info.humidity > 70 ? <ThunderstormIcon /> : info.temp > 30 ?  <WbSunnyIcon />: <AcUnitIcon /> }
+                        {info.city}            {info.humidity > 70 ? <ThunderstormIcon /> : info.temp > 30 ?  <WbSunnyIcon />: <AcUnitIcon /> }
                     </Typography>
                     <Typography variant="body2" color="text.secondary" component="span">
                         <p>Temperature: {info.temp}&deg;C</p>
                         <p>Humidity: {info.humidity}</p>
                         <p>Min Temp: {info.tempMin}&deg;C</p>
                         <p>Max Temp: {info.tempMax}&deg;C</p>
-                        <p>The weather can be described as <i>{info.weather}</i> and feels like {info.feelslike}&deg;C</p>
+                        <p>The weather can be described as <i>{info.description}</i> and feels like {info.feelsLike}&deg;C</p>
                     </Typography>
                 </CardContent>
                 <CardActions>

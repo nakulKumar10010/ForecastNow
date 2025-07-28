@@ -33,16 +33,18 @@ export default function SearchBox({ updateInfo }) {
     }
 
     let handleChange = (e) => {
-        setCity(e.target.value); 
+        setCity(e.target.value);
+        setError(false); // Reset error state on input change 
     }
 
     let handleSubmit = async (e) => {
         try{
             e.preventDefault();
             console.log("City searched:", city);
-            setCity(""); // Clear the input after submission
             let newInfo = await getWeatherInfo(); 
             updateInfo(newInfo); // Update the weather info in the parent component
+            setError(false); // Reset error state on successful fetch
+            setCity(""); // Clear the input after submission
         } catch (err) {
             setError(true);
         }
@@ -50,7 +52,22 @@ export default function SearchBox({ updateInfo }) {
     return (
         <div className="search-box">
             <form onSubmit={handleSubmit}>
-                <TextField id="city" label="City Name" variant="outlined" required value={city} onChange={handleChange}/>
+                <TextField id="city" label="City Name" variant="outlined" required value={city} onChange={handleChange}
+                InputProps={{
+                    style: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.85)',
+                    color: '#000',
+                    borderRadius: 10,
+                    fontSize: '16px',
+                    },
+                }}
+                InputLabelProps={{
+                    style: {
+                    color: '#1e88e5', // 
+                    }
+                }}
+                
+                />
                 <br></br>
                 <br></br>
                 <Button variant="contained" type="submit" >Search</Button>
