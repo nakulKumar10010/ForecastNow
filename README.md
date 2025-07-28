@@ -50,4 +50,4 @@ ForecastNow is a simple React weather app that shows real-time weather informati
 ## 👨‍💻 Author
 - Nakul
 - B.Tech CSE, DTU
-- Linkdin: www.linkedin.com/in/nakul2004
+- contact : [linkdin](www.linkedin.com/in/nakul2004)
