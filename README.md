@@ -1,12 +1,53 @@
-# React + Vite
+# 🌤️ ForecastNow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ForecastNow is a simple React weather app that shows real-time weather information using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search any city
+- Shows temperature, feels-like, min/max
+- Displays humidity and weather condition
+- Clean UI with Material-UI
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React  
+- Material-UI  
+- OpenWeatherMap API
+
+## 📦 Setup Instructions
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/ForecastNow.git
+   cd ForecastNow
+   Install dependencies:
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Add your API key in SearchBox.js:
+   ```js
+   const API_KEY = "YOUR_API_KEY";
+
+4. Start the app:
+   ```bash
+   npm start
+
+## 📁 Files
+
+- WeatherApp.js: Main component
+- SearchBox.js: Search input & API fetch
+- InfoBox.js: Weather display card
+- SearchBox.css & InfoBox.css: Styling for components
+
+## 🖌️ UI Design
+- Utilizes Material-UI components for responsive design.
+- Icons like ☀️ Sunny, 🌧️ Rainy, ❄️ Cold are rendered conditionally based on weather.
+- Typography, Card, and Button components used for layout.
+
+## 👨‍💻 Author
+- Nakul
+- B.Tech CSE, DTU
+- Linkdin: www.linkedin.com/in/nakul2004
