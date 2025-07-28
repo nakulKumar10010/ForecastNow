@@ -42,7 +42,7 @@ export default function InfoBox({ info }){
                     <Button 
                         size="small" 
                         color="primary"
-                        href="https://github.com/your-username" 
+                        href="https://github.com/nakulKumar10010/ForecastNow" 
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
@@ -51,7 +51,7 @@ export default function InfoBox({ info }){
                     <Button 
                         size="small" 
                         color="primary" 
-                        href="https://linkedin.com/in/your-profile" 
+                        href="www.linkedin.com/in/nakul2004" 
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
