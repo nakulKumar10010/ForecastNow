@@ -16,7 +16,7 @@ export default function WeatherApp() {
     let updateWeatherInfo = (newInfo) => { setWeatherInfo(newInfo); };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '20px' }}>
+    <div style={{ textAlign: 'center'}}>
         <h2 style={{ color: 'white' }}>Today's Forecast</h2>
         <SearchBox updateInfo={updateWeatherInfo}/>
         <InfoBox info={weatherInfo} />

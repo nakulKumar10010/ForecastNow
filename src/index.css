@@ -3,12 +3,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
 }
 
-    h1 {
-      text-align: center;
-      padding-top: 100px;
-    }
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}

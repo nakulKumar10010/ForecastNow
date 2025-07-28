@@ -27,7 +27,7 @@ export default function InfoBox({ info }){
                     title="Weather Image"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography  variant="h5" component="div">
                         {info.city}            {info.humidity > 70 ? <ThunderstormIcon /> : info.temp > 30 ?  <WbSunnyIcon />: <AcUnitIcon /> }
                     </Typography>
                     <Typography variant="body2" color="text.secondary" component="span">
