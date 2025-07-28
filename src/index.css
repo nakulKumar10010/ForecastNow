@@ -1,13 +1,29 @@
 body {
-    background-image: url('/uploads/bgnew.png'); /* or wherever it is */
+    background-image: url('/uploads/bgnew.png'); /* adjust path if needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* optional for parallax effect */
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-  text-align: center;
-  padding-top: 100px;
+    text-align: center;
+    padding-top: 15vh; /* responsive vertical space */
+    font-size: 4vw;     /* responsive font size */
+    color: #ffffff;     /* visible on background */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* better readability */
+}
+
+/* Optional: Responsive adjustments for very small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 6vw;
+        padding-top: 20vh;
+    }
 }
